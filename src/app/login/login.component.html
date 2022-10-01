@@ -1,0 +1,21 @@
+  <div class="loginmaindiv">
+    <div class="loginsubdiv">
+        <h1>login here</h1>
+        <hr>
+    <form #formvalue="ngForm" (ngSubmit)="getdata(formvalue.value)">
+        <div class="loginp">
+            <input type="text" #i="ngModel" name="username" placeholder="username" ngModel  >
+            <!-- <span *ngIf="i.invalid && i.touched" style="color: red;">please enter valid input</span> -->
+        </div>
+        <div class="loginp">
+            <input type="password" name="password" placeholder="password" ngModel>
+        </div>
+        <hr>
+      <span class="sp"> <a routerLink="/singup">New user/register</a></span> 
+        <span class="sp">{{out}}</span>
+        <input type="submit"  class="loginbtn" value="login" [disabled]="formvalue.untouched">
+
+    </form>
+</div>
+  </div>
+  <!-- <router-outlet></router-outlet> -->

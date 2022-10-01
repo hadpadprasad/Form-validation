@@ -1,0 +1,88 @@
+.maindiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    
+background-image: url(src/assets/images/coffie.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.formdiv{
+    border: 1px solid rgb(14, 13, 13);
+    width: 500px;
+            padding:50px 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(183, 220, 220);
+            box-shadow: 0px 10px 30px 5px black;
+}
+.leble{
+    font-size: 30px;
+    padding: 5px;
+    color:rgb(22 6 54);
+    font-weight: 500;
+
+
+}
+.heding{
+    font-size: 9vh;;
+    font-weight: 600;
+    margin-right: 50px;
+    margin: 50px;
+    color: #b7dcdc;
+    text-shadow: 8px 5px 3px #493333;
+}
+    
+
+
+.inp input{
+    font-size: 20px;
+    width: 40vh;
+    height: 30px;
+    border: none;
+    background-color: #f0ebe6;
+}
+.btn{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    border: none;
+    position: relative;
+    float: right;
+    border-radius: 5px;
+    
+}
+.btn1{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+
+    margin-top: 20px;
+    border: none;
+    position: relative;
+    float: left;
+    border-radius: 5px;
+
+}
+input:hover {
+    border: none;
+    outline: #493333;
+
+}
+.btn2:hover{
+    background-color: rgb(11, 11, 140);
+    color: white;
+}
+.sp{
+    display: block;
+    color: blue;
+    /* text-decoration: none; */
+    margin-top: 34px;
+    float: left;
+    font-size: 20px;
+}

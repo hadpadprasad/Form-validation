@@ -1,0 +1,49 @@
+<div class="maindiv">
+    <div class="heding">register your self here</div>
+<div class="formdiv">
+    <form #box="ngForm"    (ngSubmit)="getform(box.value)" >
+        <div class="leble">
+            <label for="fname">first name:</label>
+        </div>
+            <div class="inp">
+                <input type="text" #name="ngModel" name="fname" ngModel >
+                <div *ngIf="name.invalid && (name.dirty || name.touched)"></div>
+            </div>
+            <div class="leble">
+                <label for="lname">last name:</label>
+            </div>
+           <div class="inp">
+            <input type="text" name="lname" ngModel>
+            
+           </div>
+           <div class="leble">
+            <label for="date_of_birth">email:</label>
+        </div>
+            <div class="inp">
+                <input type="email"ngModel  name="email" >
+        
+            </div>
+
+            <div class="leble">
+                <label for="username">username:</label>
+            </div>
+           <div class="inp">
+            <input type="text" name="username" ngModel> 
+        
+           </div>
+           <div class="leble">
+            <label for="password">password:</label>
+        </div>
+           <div class="inp">
+            <input type="password" name="password" ngModel >
+        
+           </div>
+            <div >
+                <!-- <button class="btn1 btn2">login</button> -->
+                <button class="btn btn2" [disabled]="box.untouched">singup</button>
+                <span class="sp"><a routerLink="/login">click here to login</a></span>
+            </div>
+    </form>
+</div>
+</div>
+
